@@ -9,6 +9,8 @@ targets:
     platform: iOS
     sources:
       - Sources/FindTheRainbow
+      - path: Resources
+        buildPhase: resources
     info:
       path: Sources/FindTheRainbow/Info.plist
       properties:
@@ -23,3 +25,6 @@ targets:
         CURRENT_PROJECT_VERSION: "1"
         SWIFT_VERSION: "5.0"
         TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        DEVELOPMENT_TEAM: Y65K339Z7J
+        CODE_SIGN_STYLE: Automatic

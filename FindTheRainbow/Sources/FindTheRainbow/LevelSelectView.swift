@@ -2,6 +2,7 @@ import SwiftUI
 
 struct LevelSelectView: View {
     @EnvironmentObject private var progress: GameProgress
+    @State private var showInfo = false
 
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 14), count: 4)
 
@@ -29,6 +30,21 @@ struct LevelSelectView: View {
             .scrollContentBackground(.hidden)
             .toolbarBackground(.hidden, for: .navigationBar)
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        showInfo = true
+                    } label: {
+                        Image(systemName: "info.circle")
+                            .font(.system(size: 18, weight: .semibold))
+                            .foregroundStyle(AppTheme.textSecondary)
+                    }
+                    .accessibilityLabel("Info")
+                }
+            }
+            .sheet(isPresented: $showInfo) {
+                InfoSheet()
+            }
             .navigationDestination(for: Int.self) { destLevel in
                 LevelView(level: destLevel)
             }
@@ -43,7 +59,7 @@ struct LevelSelectView: View {
                     Text("Pop Off!")
                         .font(AppTheme.titleFont)
                         .foregroundStyle(AppTheme.textPrimary)
-                    Text("Pop balloons. Find the donuts.")
+                    Text(AppInfo.tagline)
                         .font(AppTheme.bodyFont)
                         .foregroundStyle(AppTheme.textSecondary)
                 }
@@ -53,23 +69,8 @@ struct LevelSelectView: View {
     }
 
     private var brandMark: some View {
-        ZStack {
-            Circle()
-                .fill(
-                    LinearGradient(
-                        colors: [AppTheme.balloon, AppTheme.balloonDeep],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
-                .frame(width: 56, height: 56)
-                .shadow(color: AppTheme.balloon.opacity(0.45), radius: 12, y: 4)
-            Circle()
-                .fill(.white.opacity(0.28))
-                .frame(width: 14, height: 18)
-                .offset(x: -10, y: -10)
-        }
-        .accessibilityHidden(true)
+        MysteryBalloon()
+            .frame(width: 56, height: 56)
     }
 
     private var progressCard: some View {

@@ -27,11 +27,11 @@ struct BalloonCellView: View {
             .contentShape(Rectangle())
             .onTapGesture {
                 guard !isPopped else { return }
-                let isFind = {
-                    if case .target = content { return true }
-                    return false
-                }()
-                UIImpactFeedbackGenerator(style: isFind ? .medium : .light).impactOccurred()
+                if case .target = content {
+                    GameHaptics.find()
+                } else {
+                    GameHaptics.miss()
+                }
                 onPop()
             }
         }
@@ -50,30 +50,8 @@ struct BalloonCellView: View {
 
     @ViewBuilder
     private func balloonShape(side: CGFloat) -> some View {
-        VStack(spacing: 0) {
-            Ellipse()
-                .fill(
-                    LinearGradient(
-                        colors: [AppTheme.balloon, AppTheme.balloonDeep],
-                        startPoint: .topLeading,
-                        endPoint: .bottomTrailing
-                    )
-                )
-                .frame(width: side * 0.8, height: side * 0.92)
-                .overlay(
-                    Ellipse()
-                        .fill(.white.opacity(0.38))
-                        .frame(width: side * 0.22, height: side * 0.3)
-                        .offset(x: -side * 0.18, y: -side * 0.22)
-                )
-                .shadow(color: AppTheme.balloon.opacity(0.35), radius: 3, y: 1)
-            Triangle()
-                .fill(AppTheme.balloonDeep)
-                .frame(width: side * 0.1, height: side * 0.08)
-            Capsule()
-                .fill(Color.white.opacity(0.28))
-                .frame(width: 1.5, height: side * 0.12)
-        }
+        MysteryBalloon()
+            .frame(width: side * 0.88, height: side * 0.88)
     }
 
     @ViewBuilder
@@ -106,16 +84,5 @@ struct BalloonCellView: View {
                 )
                 .shadow(color: theme.tintColor.opacity(0.25), radius: 6, y: 2)
         }
-    }
-}
-
-private struct Triangle: Shape {
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-        path.move(to: CGPoint(x: rect.midX, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.minX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
-        path.closeSubpath()
-        return path
     }
 }

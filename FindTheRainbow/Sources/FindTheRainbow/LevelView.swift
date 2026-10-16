@@ -137,6 +137,7 @@ struct LevelView: View {
             foundCount += 1
             if foundCount == findTarget {
                 progress.completeLevel(level)
+                GameHaptics.levelComplete()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) {
                     withAnimation(.spring(response: 0.35, dampingFraction: 0.86)) {
                         showCompletion = true
@@ -206,21 +207,22 @@ private struct CompletionOverlay: View {
                 } label: {
                     Text(isLastLevel ? "Back to Levels" : "Next Level")
                         .font(.system(.headline, design: .rounded).weight(.semibold))
+                        .foregroundStyle(.white)
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 14)
+                        .background(
+                            RoundedRectangle(cornerRadius: 14, style: .continuous)
+                                .fill(
+                                    LinearGradient(
+                                        colors: [AppTheme.balloon, AppTheme.balloonDeep],
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                        )
+                        .contentShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
                 }
                 .buttonStyle(.plain)
-                .foregroundStyle(.white)
-                .background(
-                    RoundedRectangle(cornerRadius: 14, style: .continuous)
-                        .fill(
-                            LinearGradient(
-                                colors: [AppTheme.balloon, AppTheme.balloonDeep],
-                                startPoint: .topLeading,
-                                endPoint: .bottomTrailing
-                            )
-                        )
-                )
 
                 if !isLastLevel {
                     Button("Levels", action: onDone)

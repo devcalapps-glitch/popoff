@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		20EE4685E1277F5855ED1F66 /* GameProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED410DC2A5B4DA217D982805 /* GameProgress.swift */; };
 		3CE9D7EE51B641DF44416B68 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F983BFDC79BE360A53304B /* LevelView.swift */; };
+		531648022F95A67FD637DA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0D0B12EC9E1E98CAB2AE24 /* Assets.xcassets */; };
 		705FC29FCFDD7E37E83D5519 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD567252CBD9B93B6C0807F /* AppTheme.swift */; };
+		AEB4B6B3CF58057E1F5A2FAA /* InfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D197DE4891CAE512881A3D /* InfoSheet.swift */; };
 		BF57D9D99E7D8700B8A3EC6E /* BalloonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF33EE78D53C9313958423 /* BalloonView.swift */; };
 		DE3E7E26AB4DDDB1721345BD /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C30D98248B42001A54C1AA /* Balloon.swift */; };
 		F7B386E3EE0D352EB26233BF /* FindTheRainbowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CD8D4F360038F9C6C486EE /* FindTheRainbowApp.swift */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		1FFF33EE78D53C9313958423 /* BalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonView.swift; sourceTree = "<group>"; };
 		22C30D98248B42001A54C1AA /* Balloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
+		4A0D0B12EC9E1E98CAB2AE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86D197DE4891CAE512881A3D /* InfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSheet.swift; sourceTree = "<group>"; };
 		8DD567252CBD9B93B6C0807F /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		8F5DBFF2F52743E0F4A189FC /* FindTheRainbow.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FindTheRainbow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		938B937E76357523FC9BF164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				A57054ACCAF2FE6145F5D4A3 /* FindTheRainbow */,
+				D322941AF8FB0D12CB565DE4 /* Resources */,
 				53DCB7318E32B8018E6CC7F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,11 +59,20 @@
 				D1CD8D4F360038F9C6C486EE /* FindTheRainbowApp.swift */,
 				ED410DC2A5B4DA217D982805 /* GameProgress.swift */,
 				938B937E76357523FC9BF164 /* Info.plist */,
+				86D197DE4891CAE512881A3D /* InfoSheet.swift */,
 				E5A79ADBB5F52827BEFFC545 /* LevelSelectView.swift */,
 				B4F983BFDC79BE360A53304B /* LevelView.swift */,
 			);
 			name = FindTheRainbow;
 			path = Sources/FindTheRainbow;
+			sourceTree = "<group>";
+		};
+		D322941AF8FB0D12CB565DE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4A0D0B12EC9E1E98CAB2AE24 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,6 +83,7 @@
 			buildConfigurationList = B33247B139F2065A0679CA99 /* Build configuration list for PBXNativeTarget "FindTheRainbow" */;
 			buildPhases = (
 				1941B4CD87B39B10CA01E945 /* Sources */,
+				6B58CF91EC4419B2AEB5BE15 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -90,6 +105,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					5C58B5FD4A77084F2016C311 = {
+						DevelopmentTeam = Y65K339Z7J;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = C4DDA8371F816733C3C329E2 /* Build configuration list for PBXProject "FindTheRainbow" */;
@@ -111,6 +130,17 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		6B58CF91EC4419B2AEB5BE15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531648022F95A67FD637DA1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1941B4CD87B39B10CA01E945 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -121,6 +151,7 @@
 				BF57D9D99E7D8700B8A3EC6E /* BalloonView.swift in Sources */,
 				F7B386E3EE0D352EB26233BF /* FindTheRainbowApp.swift in Sources */,
 				20EE4685E1277F5855ED1F66 /* GameProgress.swift in Sources */,
+				AEB4B6B3CF58057E1F5A2FAA /* InfoSheet.swift in Sources */,
 				F918713B6517DFEF8CC00B3F /* LevelSelectView.swift in Sources */,
 				3CE9D7EE51B641DF44416B68 /* LevelView.swift in Sources */,
 			);
@@ -134,7 +165,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y65K339Z7J;
 				INFOPLIST_FILE = Sources/FindTheRainbow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -216,7 +249,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y65K339Z7J;
 				INFOPLIST_FILE = Sources/FindTheRainbow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
