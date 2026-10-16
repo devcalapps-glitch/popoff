@@ -6,8 +6,9 @@ enum AppInfo {
     static let developerName = "Longest Chariot LLC"
     static let supportEmail = "support@longestchariot.com"
 
-    /// Public privacy page for App Store Connect.
+    /// Public pages for App Store Connect / in-app links.
     static let privacyPolicyURL = URL(string: "https://github.com/devcalapps-glitch/popoff/blob/main/PRIVACY.md")
+    static let supportURL = URL(string: "https://github.com/devcalapps-glitch/popoff/blob/main/SUPPORT.md")
 
     static var versionString: String {
         let short = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
@@ -56,6 +57,19 @@ struct InfoSheet: View {
                         }
                     }
                     section(title: "Support") {
+                        Text("Need help with \(AppInfo.displayName)? Reach \(AppInfo.developerName) using the options below.")
+                            .font(AppTheme.bodyFont)
+                            .foregroundStyle(AppTheme.textSecondary)
+                            .fixedSize(horizontal: false, vertical: true)
+
+                        if let url = AppInfo.supportURL {
+                            Link(destination: url) {
+                                Label("Support page", systemImage: "arrow.up.right.square")
+                                    .font(AppTheme.captionFont.weight(.semibold))
+                                    .foregroundStyle(AppTheme.balloon)
+                            }
+                        }
+
                         if let mail = URL(string: "mailto:\(AppInfo.supportEmail)") {
                             Link(destination: mail) {
                                 Label(AppInfo.supportEmail, systemImage: "envelope")
