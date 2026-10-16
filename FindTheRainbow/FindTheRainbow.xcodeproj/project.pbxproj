@@ -11,6 +11,7 @@
 		3CE9D7EE51B641DF44416B68 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F983BFDC79BE360A53304B /* LevelView.swift */; };
 		531648022F95A67FD637DA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0D0B12EC9E1E98CAB2AE24 /* Assets.xcassets */; };
 		705FC29FCFDD7E37E83D5519 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD567252CBD9B93B6C0807F /* AppTheme.swift */; };
+		87E433089F3FBB1B2D643105 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 205E3BF28CB4A4A942937370 /* PrivacyInfo.xcprivacy */; };
 		AEB4B6B3CF58057E1F5A2FAA /* InfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D197DE4891CAE512881A3D /* InfoSheet.swift */; };
 		BF57D9D99E7D8700B8A3EC6E /* BalloonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF33EE78D53C9313958423 /* BalloonView.swift */; };
 		DE3E7E26AB4DDDB1721345BD /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C30D98248B42001A54C1AA /* Balloon.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		1FFF33EE78D53C9313958423 /* BalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonView.swift; sourceTree = "<group>"; };
+		205E3BF28CB4A4A942937370 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		22C30D98248B42001A54C1AA /* Balloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
 		4A0D0B12EC9E1E98CAB2AE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86D197DE4891CAE512881A3D /* InfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSheet.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				4A0D0B12EC9E1E98CAB2AE24 /* Assets.xcassets */,
+				205E3BF28CB4A4A942937370 /* PrivacyInfo.xcprivacy */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				531648022F95A67FD637DA1F /* Assets.xcassets in Resources */,
+				87E433089F3FBB1B2D643105 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +173,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y65K339Z7J;
 				INFOPLIST_FILE = Sources/FindTheRainbow/Info.plist;
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -253,6 +258,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y65K339Z7J;
 				INFOPLIST_FILE = Sources/FindTheRainbow/Info.plist;
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
