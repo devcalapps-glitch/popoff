@@ -1,7 +1,7 @@
 import SwiftUI
 
 enum AppInfo {
-    static let displayName = "Pop Off!"
+    static let displayName = "Pop & Seek"
     static let tagline = "Pop balloons. Find what's hidden."
     static let developerName = "Longest Chariot LLC"
     static let supportEmail = "support@longestchariot.com"
@@ -43,7 +43,7 @@ struct InfoSheet: View {
                             .foregroundStyle(AppTheme.textSecondary.opacity(0.8))
                     }
                     section(title: "Privacy") {
-                        Text("Pop Off! works offline on your device. Progress is saved only on this iPhone using local storage. We do not collect, sell, or share personal data, and we do not use tracking or third-party analytics.")
+                        Text("\(AppInfo.displayName) works offline on your device. Progress is saved only on this iPhone using local storage. We do not collect, sell, or share personal data, and we do not use tracking or third-party analytics.")
                             .font(AppTheme.bodyFont)
                             .foregroundStyle(AppTheme.textSecondary)
                             .fixedSize(horizontal: false, vertical: true)

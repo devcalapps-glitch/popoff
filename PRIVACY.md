@@ -1,22 +1,22 @@
-# Privacy Policy — Pop Off!
+# Privacy Policy — Pop & Seek
 
 **Last updated:** October 16, 2026  
 **Developer:** Longest Chariot LLC
 
-This Privacy Policy describes how **Longest Chariot LLC** (“we,” “us,” or “our”) handles information in connection with the iOS application **Pop Off!** (the “App”).
+This Privacy Policy describes how **Longest Chariot LLC** (“we,” “us,” or “our”) handles information in connection with the iOS application **Pop & Seek** (the “App”).
 
 By downloading or using the App, you agree to this Privacy Policy. If you do not agree, please do not use the App.
 
 ## Who we are
 
-Pop Off! is developed and published by:
+Pop & Seek is developed and published by:
 
 **Longest Chariot LLC**  
 Email: [support@longestchariot.com](mailto:support@longestchariot.com)
 
 ## Summary
 
-Pop Off! is a casual offline game. We designed it so that **we do not collect personal data** from you through the App.
+Pop & Seek is a casual offline game. We designed it so that **we do not collect personal data** from you through the App.
 
 ## Information we do not collect
 
@@ -70,9 +70,9 @@ We may update this Privacy Policy if our practices or the App change. When we do
 
 ## Contact us
 
-If you have questions about this Privacy Policy or Pop Off!, contact:
+If you have questions about this Privacy Policy or Pop & Seek, contact:
 
 **Longest Chariot LLC**  
 Email: [support@longestchariot.com](mailto:support@longestchariot.com)
 
-This policy applies to the Pop Off! iOS application published by Longest Chariot LLC.
+This policy applies to the Pop & Seek iOS application published by Longest Chariot LLC.

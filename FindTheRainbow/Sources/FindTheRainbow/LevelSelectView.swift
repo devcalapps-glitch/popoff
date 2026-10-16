@@ -56,7 +56,7 @@ struct LevelSelectView: View {
             HStack(spacing: 12) {
                 brandMark
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Pop Off!")
+                    Text(AppInfo.displayName)
                         .font(AppTheme.titleFont)
                         .foregroundStyle(AppTheme.textPrimary)
                     Text(AppInfo.tagline)

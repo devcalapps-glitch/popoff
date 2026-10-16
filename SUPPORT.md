@@ -1,9 +1,9 @@
-# Support — Pop Off!
+# Support — Pop & Seek
 
 **Developer:** Longest Chariot LLC  
-**App:** Pop Off! (iOS)
+**App:** Pop & Seek (iOS)
 
-Thanks for playing Pop Off! We’re happy to help.
+Thanks for playing Pop & Seek! We’re happy to help.
 
 ## Contact
 
@@ -30,7 +30,7 @@ Every balloon looks the same until you pop it. Find all the hidden prizes for th
 
 Progress is saved only on your device. Deleting the app will remove your progress.
 
-### Does Pop Off! need the internet?
+### Does Pop & Seek need the internet?
 
 No. You can play fully offline. Opening optional links (privacy policy, this support page, or email) uses the internet.
 
