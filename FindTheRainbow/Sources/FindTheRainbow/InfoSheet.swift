@@ -4,7 +4,7 @@ enum AppInfo {
     static let displayName = "Pop Off!"
     static let tagline = "Pop balloons. Find what's hidden."
     static let developerName = "Longest Chariot LLC"
-    static let supportEmail = "dev.cal.apps@gmail.com"
+    static let supportEmail = "support@longestchariot.com"
 
     /// Public privacy page for App Store Connect.
     static let privacyPolicyURL = URL(string: "https://github.com/devcalapps-glitch/popoff/blob/main/PRIVACY.md")

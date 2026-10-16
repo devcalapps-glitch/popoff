@@ -12,7 +12,7 @@ By downloading or using the App, you agree to this Privacy Policy. If you do not
 Pop Off! is developed and published by:
 
 **Longest Chariot LLC**  
-Email: [dev.cal.apps@gmail.com](mailto:dev.cal.apps@gmail.com)
+Email: [support@longestchariot.com](mailto:support@longestchariot.com)
 
 ## Summary
 
@@ -73,6 +73,6 @@ We may update this Privacy Policy if our practices or the App change. When we do
 If you have questions about this Privacy Policy or Pop Off!, contact:
 
 **Longest Chariot LLC**  
-Email: [dev.cal.apps@gmail.com](mailto:dev.cal.apps@gmail.com)
+Email: [support@longestchariot.com](mailto:support@longestchariot.com)
 
 This policy applies to the Pop Off! iOS application published by Longest Chariot LLC.
