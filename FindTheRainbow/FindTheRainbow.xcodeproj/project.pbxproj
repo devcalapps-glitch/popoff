@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20EE4685E1277F5855ED1F66 /* GameProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED410DC2A5B4DA217D982805 /* GameProgress.swift */; };
+		3CE9D7EE51B641DF44416B68 /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F983BFDC79BE360A53304B /* LevelView.swift */; };
+		705FC29FCFDD7E37E83D5519 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD567252CBD9B93B6C0807F /* AppTheme.swift */; };
+		BF57D9D99E7D8700B8A3EC6E /* BalloonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFF33EE78D53C9313958423 /* BalloonView.swift */; };
+		DE3E7E26AB4DDDB1721345BD /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C30D98248B42001A54C1AA /* Balloon.swift */; };
+		F7B386E3EE0D352EB26233BF /* FindTheRainbowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CD8D4F360038F9C6C486EE /* FindTheRainbowApp.swift */; };
+		F918713B6517DFEF8CC00B3F /* LevelSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A79ADBB5F52827BEFFC545 /* LevelSelectView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FFF33EE78D53C9313958423 /* BalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonView.swift; sourceTree = "<group>"; };
+		22C30D98248B42001A54C1AA /* Balloon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balloon.swift; sourceTree = "<group>"; };
+		8DD567252CBD9B93B6C0807F /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		8F5DBFF2F52743E0F4A189FC /* FindTheRainbow.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FindTheRainbow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		938B937E76357523FC9BF164 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B4F983BFDC79BE360A53304B /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
+		D1CD8D4F360038F9C6C486EE /* FindTheRainbowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTheRainbowApp.swift; sourceTree = "<group>"; };
+		E5A79ADBB5F52827BEFFC545 /* LevelSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelSelectView.swift; sourceTree = "<group>"; };
+		ED410DC2A5B4DA217D982805 /* GameProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProgress.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		53DCB7318E32B8018E6CC7F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F5DBFF2F52743E0F4A189FC /* FindTheRainbow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E3C251A3E8AC96D6E3C576E = {
+			isa = PBXGroup;
+			children = (
+				A57054ACCAF2FE6145F5D4A3 /* FindTheRainbow */,
+				53DCB7318E32B8018E6CC7F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A57054ACCAF2FE6145F5D4A3 /* FindTheRainbow */ = {
+			isa = PBXGroup;
+			children = (
+				8DD567252CBD9B93B6C0807F /* AppTheme.swift */,
+				22C30D98248B42001A54C1AA /* Balloon.swift */,
+				1FFF33EE78D53C9313958423 /* BalloonView.swift */,
+				D1CD8D4F360038F9C6C486EE /* FindTheRainbowApp.swift */,
+				ED410DC2A5B4DA217D982805 /* GameProgress.swift */,
+				938B937E76357523FC9BF164 /* Info.plist */,
+				E5A79ADBB5F52827BEFFC545 /* LevelSelectView.swift */,
+				B4F983BFDC79BE360A53304B /* LevelView.swift */,
+			);
+			name = FindTheRainbow;
+			path = Sources/FindTheRainbow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C58B5FD4A77084F2016C311 /* FindTheRainbow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B33247B139F2065A0679CA99 /* Build configuration list for PBXNativeTarget "FindTheRainbow" */;
+			buildPhases = (
+				1941B4CD87B39B10CA01E945 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindTheRainbow;
+			packageProductDependencies = (
+			);
+			productName = FindTheRainbow;
+			productReference = 8F5DBFF2F52743E0F4A189FC /* FindTheRainbow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2B3704EE877697AEF908F40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = C4DDA8371F816733C3C329E2 /* Build configuration list for PBXProject "FindTheRainbow" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7E3C251A3E8AC96D6E3C576E;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 53DCB7318E32B8018E6CC7F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C58B5FD4A77084F2016C311 /* FindTheRainbow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1941B4CD87B39B10CA01E945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705FC29FCFDD7E37E83D5519 /* AppTheme.swift in Sources */,
+				DE3E7E26AB4DDDB1721345BD /* Balloon.swift in Sources */,
+				BF57D9D99E7D8700B8A3EC6E /* BalloonView.swift in Sources */,
+				F7B386E3EE0D352EB26233BF /* FindTheRainbowApp.swift in Sources */,
+				20EE4685E1277F5855ED1F66 /* GameProgress.swift in Sources */,
+				F918713B6517DFEF8CC00B3F /* LevelSelectView.swift in Sources */,
+				3CE9D7EE51B641DF44416B68 /* LevelView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		131CCD7CA3FFEF7E331FD583 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Sources/FindTheRainbow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bbhanda1.FindTheRainbow;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B3DEA5251F99FC6DE7E6B6D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B8784F83F8F7B11D133122E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Sources/FindTheRainbow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bbhanda1.FindTheRainbow;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C30E93363BA819495821C5E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B33247B139F2065A0679CA99 /* Build configuration list for PBXNativeTarget "FindTheRainbow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131CCD7CA3FFEF7E331FD583 /* Debug */,
+				B8784F83F8F7B11D133122E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C4DDA8371F816733C3C329E2 /* Build configuration list for PBXProject "FindTheRainbow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3DEA5251F99FC6DE7E6B6D8 /* Debug */,
+				C30E93363BA819495821C5E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2B3704EE877697AEF908F40 /* Project object */;
+}
